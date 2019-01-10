@@ -1,13 +1,13 @@
 ---
-title: "Sentiment Analysis using Deep Neural Networks"
+title: "Runtime improvement of Poisson equation solver using Hierarchical Matrix concept"
 layout: post
 date: 2019-01-10 14:10
 tag: jekyll
-image: /assets/images/b_1.png
+image: /assets/images/b_2.png
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "project2"
+description: "project3"
 category: project
 author: sahilgupta
 externalLink: false
