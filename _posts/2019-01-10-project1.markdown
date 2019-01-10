@@ -13,7 +13,7 @@ author: sahilgupta
 externalLink: false
 ---
 
-Course project from CIS563 (Physics based simulations) during my 1st semester at Penn. This is an interdisciplinary project at the intersection of simulations, computer graphics, and machine learning.
+Course project from CIS563 (Physics based simulations) during my 1st semester at Penn. This is an interdisciplinary project at the intersection of simulations, computer graphics, and machine learning. It is based on a 2018 [paper](http://gamma.cs.unc.edu/DRL_FluidRigid/).
 
 ---
 
@@ -36,5 +36,6 @@ Two different modeling approaching were mixed to solve the problem at hand. The 
 I planned the project in various stages. 
 - Physics Simulator: The motion of the ball and fluid is modeled using Newtons laws and Navier Stokes equations and these are numerically integrated to simulate this coupled motion. I followed a variational pressure framework approach desribed by Prof. Batty in his 2007 paper. I wrote this code in C++11 using a supporting library called Eigen for handling linear algebra operations. 
 - C++ to Python: As most of the machine learning libraries are based on Python, I had to port the simulator (from C++) to Python. For this I used an interface compiler called SWIG (Simplified Wrapper and Interface Generator), which allowed to package the entire C++ code into a single shared library file that could be imported directly in Python. This provided a convenient way to simulate the fluid-ball motion in Python at an added advantage of fast computations as the backend was still in C++. 
-- Gamify the Simulator: 
+- Gamify the Simulator: As I was trying to solve a control problem using Reinforcement Learning, I turned my attention to a popular library used for Reinforcement Learning: Gym by OpenAI. Gym provides a clean and modular interface in Python for doing reinforcement learning, and supports methods to reset simulation, time stepping in simulator etc. I wrapped the simulator library from SWIG using Gym library to what is called as an Environment. 
+- Pre-training decisions: The original paper used an autoencoder in the learning task to reduce the dimensions of the state space of the environment (which is high dimensional due to the fluid field). 
 
