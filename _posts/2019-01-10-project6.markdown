@@ -1,13 +1,13 @@
 ---
-title: "Runtime improvement of Poisson equation solver using Hierarchical Matrix concept"
+title: "Tomographic Reconstruction based on Tunable Diode Laser Absorption Spectroscopy"
 layout: post
-date: 2019-01-10 13:10
+date: 2019-01-10 10:10
 tag: jekyll
 image: /assets/images/b_2.png
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "project3"
+description: "project6"
 category: project
 author: sahilgupta
 externalLink: false
