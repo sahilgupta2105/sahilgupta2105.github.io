@@ -1,7 +1,7 @@
 ---
 title: "Sentiment Analysis using Deep Neural Networks"
 layout: post
-date: 2019-01-10 16:10
+date: 2019-01-10 14:10
 tag: jekyll
 image: /assets/images/b_1.png
 headerImage: false
