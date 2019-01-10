@@ -1,32 +1,39 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "Fluid directed Rigid Ball using Deep Reinforcement Learning"
 layout: post
-date: 2016-01-23 22:10
+date: 2019-01-10 15:10
 tag: jekyll
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "project1."
 category: project
 author: johndoe
 externalLink: false
 ---
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+Course project from CIS563 (Physics based simulations) during my 1st semester at Penn. This is an interdisciplinary project at the intersection of simulations, computer graphics, and machine learning.
 
 ---
 
-What has inside?
+Languages: 
+- C++
+- Python
+- Matlab
 
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+Libraries: 
+- Gym by OpenAI
+- Keras (backend: Tensorflow)
+- Eigen (linear algebra in C++)
+- Partio (data I/O)
+- Stable-baselines
 
 ---
 
-[Check it out](http://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues).
+Two different modeling approaching were mixed to solve the problem at hand. The task was to balance a rigid ball in air using a jet of water, which is controlled by a neural network. The motion of ball is based on the classical laws of physics (deterministic approach), whereas the movement of the water jet is based on a probabilistic approach as the neural network learns to evaluate the best set of moves for a given state of the environment. 
+
+I planned the project in various stages. 
+- Physics Simulator: The motion of the ball and fluid is modeled using Newtons laws and Navier Stokes equations and these are numerically integrated to simulate this coupled motion. I followed a variational pressure framework approach desribed by Prof. Batty in his 2007 paper. I wrote this code in C++11 using a supporting library called Eigen for handling linear algebra operations. 
+- C++ to Python: As most of the machine learning libraries are based on Python, I had to port the simulator (from C++) to Python. For this I used an interface compiler called SWIG (Simplified Wrapper and Interface Generator), which allowed to package the entire C++ code into a single shared library file that could be imported directly in Python. This provided a convenient way to simulate the fluid-ball motion in Python at an added advantage of fast computations as the backend was still in C++. 
+- Gamify the Simulator: 
+
