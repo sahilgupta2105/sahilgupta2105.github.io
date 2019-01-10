@@ -6,9 +6,9 @@ tag: jekyll
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "project1."
+description: "project1"
 category: project
-author: johndoe
+author: sahilgupta
 externalLink: false
 ---
 
