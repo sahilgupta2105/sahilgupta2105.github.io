@@ -107,7 +107,7 @@ author:
   name             : "Sahil Gupta"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Graduate Student at Penn."
-  location         : "Philadelphia"
+  location         : "Philadelphia, PA"
   email            : "gsahil@seas.upenn.edu"
   links:
     - label: "Email"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/sahilgupta2105"
+      # url: "https://github.com/sahilgupta2105"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
