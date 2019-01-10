@@ -1,0 +1,38 @@
+---
+title: "Sentiment Analysis using Deep Neural Networks"
+layout: post
+date: 2019-01-10 14:10
+tag: jekyll
+image: /assets/images/b_1.png
+headerImage: false
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "project2"
+category: project
+author: sahilgupta
+externalLink: false
+---
+
+Course project from CIS545 (Big Data Analytics) during my 1st semester at Penn. This project was inspired from a then on-going Quora competition for building models for sentiment analysis on their data. Due to proprietary data, I have not shared any code or data here. But, a detailed report of the other aspects of the project can be found [here](https://drive.google.com/open?id=1DOcox_t8ShC1qcTdmA7eCjz8ZIoHPhjj).
+
+---
+
+**Languages**: 
+- Python
+
+**Libraries**: 
+- Sklearn
+- Keras (backend: Tensorflow)
+- Pandas 
+- NLTK
+
+---
+
+Sentiment analysis is a classic problem in the field of natural language processing (NLP). As computers can only understand numbers, the first challenge in any NLP task is to find an alternate (number) representation for the text. Mainly, two such approaches are available: Bag of Words, and Word Embedding. We compared both approaches and Word Embedding turned out to be a superior representation as it is much more sophisticated than Bag of Words (one to one mapping of word to integer) as it accounts for the context in the text too. 
+
+- **Pre-Processing**: Pandas library was used to manipulate data. The NLTK library was used to split sentences into words and remove redundant words such as a, the etc. (stopwords). In addition, we also used K-Means clustering algorithm to divide the questions into topics to ensure random sampling from the dataset (as we trained our models a part of the given dataset).
+
+- **Models**: We implemented and compared different approaches: Linear Regression, Random Forest and Neural Networks. More specifically, we implemented the following neural networks: Convolutional Neural Network, Long Short Term Memory, and Attention Layer based model. These are state-of-the-art algorithms in neural network for text data.
+
+- **Post-Processing**: We conducted an in-depth analysis for all our models. We obtained the top words for models and used other visualization techniques such as t-SNE, PCA, to understand the decisions made by the model.
+
