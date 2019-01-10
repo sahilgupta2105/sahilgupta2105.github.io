@@ -1,73 +1,66 @@
-# Forty - Jekyll Theme
+<p align="center">
+    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a> · <a href="https://travis-ci.org/sergiokopplin/indigo"><img src="https://camo.githubusercontent.com/5393485b732749b3499264168fa8af60166071e8/68747470733a2f2f7472617669732d63692e6f72672f73657267696f6b6f70706c696e2f696e6469676f2e7376673f6272616e63683d67682d7061676573" alt="Build Status" data-canonical-src="https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages" style="max-width:100%;"></a></h2>
+</p>
 
-A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
+<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
 
-![Forty Theme](assets/images/forty.jpg "Forty Theme")
+***
 
-# How to Use
+<p align="center">
+    <b><a href="README.md#what-has-inside">What has inside</a></b>
+    |
+    <b><a href="README.md#setup">Setup</a></b>
+    |
+    <b><a href="README.md#settings">Settings</a></b>
+    |
+    <b><a href="README.md#how-to">How to</a></b>
+</p>
 
-For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
+<p align="center">
+    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
+</p>
 
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+## What has inside
 
-# Added Features
+- [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
+- Tests with [Travis](https://travis-ci.org/)
+- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
+- No JS. :sunglasses:
 
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
-* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
-* Set **featured images** in front matter.
+## Setup
 
-# Issues
+0. :star: to the project. :metal:
+2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
+3. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
+4. Write some posts :bowtie:
 
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/forty-jekyll-theme) and I will be more than happy to help!
+If you want to test locally on your machine, do the following steps also:
 
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com).
+1. Install [Jekyll](http://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](http://bundler.io/).
+2. Clone the forked repo on your machine
+3. Enter the cloned folder via terminal and run `bundle install`
+4. Then run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
+5. Open it in your browser: `http://localhost:4000`
+6. Test your app with `bundle exec htmlproofer ./_site`
+7. Do you want to use the [jekyll-admin](https://jekyll.github.io/jekyll-admin/) plugin to edit your posts? Go to the admin panel: `http://localhost:4000/admin`. The admin panel will not work on GitHub Pages, [only locally](https://github.com/jekyll/jekyll-admin/issues/341#issuecomment-292739469).
 
-The GitHub repository is simply a mirror of the GitLab repository.
+## Settings
 
-# Credits
-
-Original README from HTML5 UP:
+You must fill some informations on `_config.yml` to customize your site.
 
 ```
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+name: John Doe
+bio: 'A Man who travels the world eating noodles'
+picture: 'assets/images/profile.jpg'
+...
 
-
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		background-size polyfill (github.com/louisremi)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
 ```
 
-Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+## How To?
+
+Check the [FAQ](./FAQ.md) if you have any doubt or problem.
+
+---
+
+[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin

@@ -1,36 +1,49 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: page
+---
 
-{% include head.html %}
+{% if page.image and page.headerImage %}
+    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
+{% endif %}
 
-<body>
+<h1 class="title">{{ page.title }}</h1>
 
-    {% include header.html %} 
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
+<span class="date">
+    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
+    {% if site.read-time %} - {% include read-time.html %}{% endif %}
+</span>
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
-	</div>
-</section>
+{% if site.show-tags %}
+    <div class="post-tags">
+        {% for tag in page.tags %}
+            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+{% endif %}
 
-</div>
+{{content}}
 
-    {% include footer.html %}
+{% if site.post-advance-links contains page.category %}
+    <div class="blog-navigation">
+        {% if page.previous.url %}
+            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% else %}
+            <a class="prev"></a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+        {% endif %}
+    </div>
+{% endif %}
 
-</body>
+{% if site.related %}
+    {% include related.html %}
+{% endif %}
 
-</html>
+{% if site.show-author %}
+    {% include author.html %}
+{% endif %}
+
+{% if site.disqus.categories contains page.category %}
+    {% include disqus.html %}
+{% endif %}
