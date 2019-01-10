@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Sahil Gupta"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "M.S., Scientific Computing, School of Engineering, UPenn '20. Dual Degree (B.Tech+M.Tech), Aerospace Engineering (minor: Computational Mathematics), IIT Madras '18."
+  bio              : "M.S., Scientific Computing, School of Engineering, UPenn '20.        Dual Degree (B.Tech+M.Tech), Aerospace Engineering (minor: Computational Mathematics), IIT Madras '18."
   location         : "Philadelphia, PA"
   email            : "gsahil@seas.upenn.edu"
   links:
