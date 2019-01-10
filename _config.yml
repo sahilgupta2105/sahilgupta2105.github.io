@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Sahil Gupta"
 title_separator          : "-"
 name                     : "Sahil Gupta"
-description              : "Portfolio."
+description              : "Portfolio"
 url                      : "https://sahilgupta2105.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Sahil Gupta"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Graduate Student at Penn."
+  bio              : "Scientific Computing, School of Engineering, UPenn '20"
   location         : "Philadelphia, PA"
   email            : "gsahil@seas.upenn.edu"
   links:
