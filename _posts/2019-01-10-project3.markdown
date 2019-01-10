@@ -4,7 +4,7 @@ layout: post
 date: 2019-01-10 13:10
 tag: jekyll
 image: /assets/images/b_2.png
-headerImage: false
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "project3"
@@ -13,7 +13,7 @@ author: sahilgupta
 externalLink: false
 ---
 
-Dual Degree Project (M.Tech thesis) during my 5th year at Indian Institute of Technology (IIT) Madras. I was working under the supervision of Head of Department of Department of Mathematics, Prof. S. Sundar. This project was an extension of a course project in Prof. Sundars course on Computer Modeling & Simulation during my 4th year.
+Dual Degree Project (M.Tech thesis) during my 5th year at Indian Institute of Technology (IIT) Madras. I was working under the supervision of Head of Department of Mathematics, Prof. S. Sundar. This project was an extension of a course project in Prof. Sundars course on Computer Modeling & Simulation during my 4th year.
 
 ---
 
