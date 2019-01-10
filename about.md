@@ -4,37 +4,21 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>I am a graduate student in Scientific Computing Masters Program at University of Pennsylvania. I started my double masters at Penn in August '18 after graduating from Indian Institute of Technology (IIT) Madras in July '18 with a Dual Degree (B.Tech+M.Tech) in Aerospace Engineering, with specialization in computational and applied mathematics.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>I love challenges and always on the lookout for new problems to solve. My interests in computers motivated me to explore the field of Computational Fluid Dynamics (CFD). I worked in this area for 3 years as an undergrad at the Department of Aerospace (IIT Madras). During this time, I was also part of the Formula Student Team at my college (Raftar Formula Racing) and led the Aerodynamics divison for 1.5 years. I helped found this sub-system and managed a team to design wings for the racecar using CFD. Towards the end of my 4th year, I took a course on computer modeling and simulation in the department of mathematics. I found the whole process of mathematical modeling and code writing really interesting. This led me to explore a problem from applied and computational mathematics for my masters thesis.</p>
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>C++ (advanced)</li>
+	<li>Matlab (advanced)</li>
+	<li>Python (intermediate)</li>
+	<li>SQL (beginner)</li>
+	<li>Javascript (begineer)</li>
+	<li>Machine Learning</li>
+	<li>Data Analytics</li>
+	<li>Statistical Analysis</li>
 </ul>
 
 <h2>Projects</h2>
