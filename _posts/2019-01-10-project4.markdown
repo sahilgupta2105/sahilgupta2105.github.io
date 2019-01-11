@@ -27,6 +27,7 @@ This was a course project for Computer Modeling & Simulation course taught by Pr
 ---
 
 In this project, I implemented a fluid solver based on a recent nesh-free numerical method called Finite Pointset Method (FPM). The biggest advantage of FPM over the conventional methods such as FDM, FVM, FEM, is that it does not require a grid and collectively, all the particles represent the mesh. This means that mesh management modules are required, which ensure that the simulation doesn't diverge. These include cluster removal (if two points get really close to each other), or hole filling (a particle doesn't have enough neighbours). These modules are called at every iteration of the time loop. Hole filling is the more challenging task as we don't have any information about where the points are not present. I explored two approaches to hole filling:
+
 - **Brute Force**: we keep trying to add new particles with the existing particles as center until no more points can be added. The time complexity of this approach is quadratic. This method worked for the lid driven cavity problem, but was a bottleneck in the broken dam simulation.
 - **Voronoi Center**: Voronoi centers can be used to find locations for possible holes and new points can be added at those locations directly. The Scipy package in Python provides a fast implementation for Voronoi diagram. So, this approach was straight-forward.
 
