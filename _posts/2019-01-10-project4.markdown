@@ -13,7 +13,7 @@ author: sahilgupta
 externalLink: false
 ---
 
-Dual Degree Project (M.Tech thesis) during my 5th year at Indian Institute of Technology (IIT) Madras. I was working under the supervision of Head of Department of Department of Mathematics, Prof. S. Sundar. This project was an extension of a course project in Prof. Sundars course on Computer Modeling & Simulation during my 4th year.
+This was a course project for Computer Modeling & Simulation course taught by Prof. S. Sundar, IIT Madras. 
 
 ---
 
@@ -26,4 +26,8 @@ Dual Degree Project (M.Tech thesis) during my 5th year at Indian Institute of Te
 
 ---
 
-blah blah
+In this project, I implemented a fluid solver based on a recent nesh-free numerical method called Finite Pointset Method (FPM). The biggest advantage of FPM over the conventional methods such as FDM, FVM, FEM, is that it does not require a grid and collectively, all the particles represent the mesh. This means that mesh management modules are required, which ensure that the simulation doesn't diverge. These include cluster removal (if two points get really close to each other), or hole filling (a particle doesn't have enough neighbours). These modules are called at every iteration of the time loop. Hole filling is the more challenging task as we don't have any information about where the points are not present. I explored two approaches to hole filling:
+- **Brute Force**: we keep trying to add new particles with the existing particles as center until no more points can be added. The time complexity of this approach is quadratic. This method worked for the lid driven cavity problem, but was a bottleneck in the broken dam simulation.
+- **Voronoi Center**: Voronoi centers can be used to find locations for possible holes and new points can be added at those locations directly. The Scipy package in Python provides a fast implementation for Voronoi diagram. So, this approach was straight-forward.
+
+The points in the domain are collectively called Point Cloud, and run these mesh maintainance modules at every iteration to clean Point Cloud. FPM is based on Chorin's Projection Method and assumes incompressible flow. The simulation in this project were conducted for Re=100. Another important aspect of this method is computation of derivatives, which is not obviously as the mesh is not structured. To allevaite this problem, a moving least square method is used to compute derivatives of variables such as velocity and pressure for solving the Navier Stoke's equation.
