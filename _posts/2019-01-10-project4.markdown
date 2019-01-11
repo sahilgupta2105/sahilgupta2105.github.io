@@ -18,11 +18,11 @@ This was a course project for Computer Modeling & Simulation course taught by Pr
 ---
 
 **Languages**: 
-- C++
+- Python
 
 **Libraries**: 
-- Eigen (linear algebra)
-- HLibPro
+- Numpy
+- Scipy
 
 ---
 
