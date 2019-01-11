@@ -13,17 +13,15 @@ author: sahilgupta
 externalLink: false
 ---
 
-Dual Degree Project (M.Tech thesis) during my 5th year at Indian Institute of Technology (IIT) Madras. I was working under the supervision of Head of Department of Department of Mathematics, Prof. S. Sundar. This project was an extension of a course project in Prof. Sundars course on Computer Modeling & Simulation during my 4th year.
+This project was a result of my interests in Computers. I wanted to explore applications of programming in Aerospace Engineering. It was my 1st project in Computational Fluid Dynamics (CFD) under the guidance of Prof. N.R. Panchpakesan.
 
 ---
 
 **Languages**: 
 - C++
 
-**Libraries**: 
-- Eigen (linear algebra)
-- HLibPro
-
 ---
 
-blah blah
+I started my journey as a serious C++ programmer with this project. I implemented a lid driven cavity solver based on Finite Volume Method using SIMPLE (Semi-Implicit Pressure Linked Equation) algorithm.
+
+I started the project in my sophomore year and continued working on it for around 1.5 years. First, I implemented a 2D code using the Gauss Seidel iterative method. After validating the solver, I moved on to extend the code to 3D. It seemed trivial at the time, but turned to be really challenging as resolving bugs for 3D case was tedious. Finally, once I had successfully completed the 3D version, I improved the speed of the solver by compressing the (3D) array data as (2D) arrays. This improved the speed of the solver by around 50%. 
