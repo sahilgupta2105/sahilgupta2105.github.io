@@ -13,7 +13,7 @@ author: sahilgupta
 externalLink: false
 ---
 
-I had the opportunity to travel to Germany after my 3rd year and work at with the Environment Modeling & Sensing Group in the Department of Computer and Electrical Engineering, Technical University of Munich.
+I had the opportunity to travel to Germany after my 3rd year and work with the Environment Modeling & Sensing Group in the Department of Computer and Electrical Engineering, Technical University of Munich.
 
 ---
 
@@ -22,3 +22,8 @@ I had the opportunity to travel to Germany after my 3rd year and work at with th
 
 ---
 
+The most relatable example for a tomographic reconstruction is the X-Ray machines. X-Ray machines contains lasers (emitter-detector pair), where the emitter shoots laser at the object of interest and the change in the energy level is measured by the emitter. 
+
+More specifically, this same concept can be used to quantify the concentration of carbon dioxide in a region. The lasers are used to measure difference in the energy level, which is used to compute concetration of the gas using Beer-Lambert Law. Tomographic Reconstruction is the process of computing the distritbution of the gas in the region of interest using these laser readings. This is an ill-posed inverse problem as the number of lasers is always less than the number of unknowns because of they are extremely expensive.
+
+This was a totally new area for me and I surveyed the problem of ill-posed inverse in mathematics. I studied different reconstruction algorithms such as Algebraic Reconstruction Technique (including variants such as MART, MAAART), Tiknonov Regularization, and implemented these in Matlab. In addition, I packaged the code as a GUI platform, which consisted of various features such as pre-processing, solver, post-processing. 
