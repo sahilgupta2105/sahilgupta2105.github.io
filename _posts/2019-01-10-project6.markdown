@@ -3,8 +3,8 @@ title: "Tomographic Reconstruction based on Tunable Diode Laser Absorption Spect
 layout: post
 date: 2019-01-10 10:10
 tag: jekyll
-image: /assets/images/b_2.png
-headerImage: false
+image: /assets/images/b_3.png
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "project6"
